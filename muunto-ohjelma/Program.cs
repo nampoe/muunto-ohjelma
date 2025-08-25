@@ -1,48 +1,39 @@
-﻿float[] units = {1, 10, 1000, 1000000, 25.4F, 304.8F, 914.4F, 1609344F };
-
-// mm = 1, cm = 2, m = 3, km = 4, inch = 5, feet = 6, yards = 7, miles = 8
-// täs pmo kieles ei oo definee );
-
-
-while (true)
+﻿using System;
+class Program
 {
-    Console.WriteLine("Mitä haluat muuttaa miksi");
-    Console.WriteLine("1 - metriyksiköt, 2 - imperial yksiköt");
-
-    int.TryParse(Console.ReadLine(), out int vastaus);
-
-    // Console.WriteLine(vastaus);
-
-    if (vastaus == 1)
+    static void Main()
     {
-        Console.WriteLine("\n1 - Kilometrit \n2 - Metrit\n3 - Senttimetrit\n4 - Millimetrit");
-        int.TryParse(Console.ReadLine(), out int vastaus2);
-        switch (vastaus2) 
+        // Yksiköt ja niiden muuntosuhteet metreihin
+        string[] units = { "millimetri", "senttimetri", "tuuma", "jalka", "jaardi", "maili" };
+        double[] toMeters = { 0.001, 0.01, 0.0254, 0.3048, 0.9144, 1609.344 };
+
+        Console.WriteLine("Valitse lähtöyksikkö:");
+        for (int i = 0; i < units.Length; i++)
         {
-            case 1:
-                Console.WriteLine("Kilometrit muunnettuna muihin yksikköihin.");
-                for(int i = 0; i < units.Length; i++) 
-                {
-
-                }
-
-                break;
-
-            default:
-                break;
-
+            Console.WriteLine($"{i + 1}. {units[i]}");
         }
 
-    }
-    else if (vastaus == 2)
-    {
+        int choice;
+        while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > units.Length)
+        {
+            Console.WriteLine("Virheellinen valinta, yritä uudelleen:");
+        }
 
-    }
-    else
-    {
-        Console.WriteLine("vaa 1 tai 2");
-        Console.Clear();
+        Console.WriteLine($"Syötä arvo ({units[choice - 1]}):");
+        double value;
+        while (!double.TryParse(Console.ReadLine(), out value))
+        {
+            Console.WriteLine("Virheellinen numero, yritä uudelleen:");
+        }
 
-    }
+        // Muutetaan arvo metreiksi
+        double meters = value * toMeters[choice - 1];
 
+        Console.WriteLine("\nMuunnetut arvot:");
+        for (int i = 0; i < units.Length; i++)
+        {
+            double converted = meters / toMeters[i];
+            Console.WriteLine($"{units[i]}: {converted}");
+        }
+    }
 }
