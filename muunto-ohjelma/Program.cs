@@ -33,7 +33,8 @@ class Program
         for (int i = 0; i < units.Length; i++)
         {
             double converted = meters / toMeters[i];
-            Console.WriteLine($"{units[i]}: {converted}");
+            Console.WriteLine($"{units[i]}: {converted:F6}");
         }
     }
 }
+
