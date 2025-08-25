@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
         // Yksiköt ja niiden muuntosuhteet metreihin
-        string[] units = { "millimetri", "senttimetri", "metri","Kilometri", "tuuma", "jalka", "jaardi", "maili" };
+        string[] units = { "millimetri", "senttimetri", "metri","kilometri", "tuuma", "jalka", "jaardi", "maili" };
         double[] toMeters = { 0.001, 0.01, 1,1000,0.0254, 0.3048, 0.9144, 1609.344 };
 
         Console.WriteLine("Valitse lähtöyksikkö:");
@@ -38,4 +38,5 @@ class Program
         }
     }
 }
+
 
