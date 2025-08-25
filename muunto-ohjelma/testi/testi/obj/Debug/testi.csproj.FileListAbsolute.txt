@@ -1,0 +1,7 @@
+C:\Users\Esra\source\repos\testi\testi\bin\Debug\testi.exe.config
+C:\Users\Esra\source\repos\testi\testi\bin\Debug\testi.exe
+C:\Users\Esra\source\repos\testi\testi\bin\Debug\testi.pdb
+C:\Users\Esra\source\repos\testi\testi\obj\Debug\testi.csproj.AssemblyReference.cache
+C:\Users\Esra\source\repos\testi\testi\obj\Debug\testi.csproj.CoreCompileInputs.cache
+C:\Users\Esra\source\repos\testi\testi\obj\Debug\testi.exe
+C:\Users\Esra\source\repos\testi\testi\obj\Debug\testi.pdb
