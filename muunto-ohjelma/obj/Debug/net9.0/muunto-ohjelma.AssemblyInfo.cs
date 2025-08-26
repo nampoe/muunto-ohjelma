@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("muunto-ohjelma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4528a502bae62ca8b941083f16f67169ea1060d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("muunto-ohjelma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("muunto-ohjelma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
