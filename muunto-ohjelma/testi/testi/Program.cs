@@ -1,4 +1,5 @@
-﻿using System;
+﻿//test
+using System;
 class Program
 {
     static void Main()
@@ -8,9 +9,9 @@ class Program
         double[] toMeters = { 0.001, 0.01, 0.0254, 0.3048, 0.9144, 1609.344 };
 
         Console.WriteLine("Valitse lähtöyksikkö:");
-        for (int x = 0; x < units.Length; x++)
+        for (int i = 0; i < units.Length; i++)
         {
-            Console.WriteLine($"{x + 1}. {units[x]}");
+            Console.WriteLine($"{i + 1}. {units[i]}");
         }
 
         int choice;
