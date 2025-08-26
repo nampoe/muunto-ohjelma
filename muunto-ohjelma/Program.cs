@@ -1,4 +1,4 @@
-
+// pmo pmo slödfjgnuoösfgjgkdfjgjkfngölgjkh
 using System;
 class Program
 {
@@ -39,6 +39,3 @@ class Program
         }
     } // pmo pmo - jani
 }
-
-
-
