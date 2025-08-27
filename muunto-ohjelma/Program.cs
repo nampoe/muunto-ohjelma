@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        // Yksiköt ja niiden muuntosuhteet metreihin 124 567
+        // Yksiköt ja niiden muuntosuhteet metreihin 124
         string[] units = { "Millimetri", "Senttimetri", "Metri","Kilometri", "Tuuma", "Jalka", "Jaardi", "Maili" };
         double[] toMeters = { 0.001, 0.01, 1,1000,0.0254, 0.3048, 0.9144, 1609.344 };
 
@@ -37,6 +37,6 @@ class Program
             double converted = meters / toMeters[i];
             Console.WriteLine($"{units[i]}: {converted:0.########}");
         }
-    }
+    } //testiiiii
 }
 
