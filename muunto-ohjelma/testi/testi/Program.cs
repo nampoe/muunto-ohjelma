@@ -1,9 +1,12 @@
 ﻿//test test
+//muutos
+//uusi comment
 using System;
 class Program
 {
     static void Main()
     {
+        string test = "q";
         // Yksiköt ja niiden muuntosuhteet metreihin
         string[] units = { "millimetri", "senttimetri", "tuuma", "jalka", "jaardi", "maili" };
         double[] toMeters = { 0.001, 0.01, 0.0254, 0.3048, 0.9144, 1609.344 };
