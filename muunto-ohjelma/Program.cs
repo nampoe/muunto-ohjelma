@@ -28,6 +28,12 @@ class Program
             Console.WriteLine("Virheellinen numero, yritä uudelleen:");
         }
 
+        static string Helloworld(string pmo)
+        {
+            Console.WriteLine(pmo);
+            return pmo;
+        }
+
         // Muutetaan arvo metreiksi
         double meters = value * toMeters[choice - 1];
 
