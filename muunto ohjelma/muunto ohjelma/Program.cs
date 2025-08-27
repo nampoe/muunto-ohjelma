@@ -1,13 +1,15 @@
-﻿//test test
+﻿//test
+
 using System;
 class Program
 {
     static void Main()
     {
         // Yksiköt ja niiden muuntosuhteet metreihin
-        string[] units = { "millimetri", "senttimetri", "tuuma", "jalka", "jaardi", "maili" };
-        double[] toMeters = { 0.001, 0.01, 0.0254, 0.3048, 0.9144, 1609.344 };
+        string[] units = { "Millimetri", "Senttimetri", "Metri", "Kilometri", "Tuuma", "Jalka", "Jaardi", "Maili" };
+        double[] toMeters = { 0.001, 0.01, 1, 1000, 0.0254, 0.3048, 0.9144, 1609.344 };
 
+        //kysytään yksitöt ja lukumäärät
         Console.WriteLine("Valitse lähtöyksikkö:");
         for (int i = 0; i < units.Length; i++)
         {
@@ -34,7 +36,8 @@ class Program
         for (int i = 0; i < units.Length; i++)
         {
             double converted = meters / toMeters[i];
-            Console.WriteLine($"{units[i]}: {converted}");
+            Console.WriteLine($"{units[i]}: {converted:0.########}");
         }
     }
 }
+
